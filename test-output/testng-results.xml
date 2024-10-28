@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-28T19:08:08 IST" name="Suite" finished-at="2024-10-28T19:08:17 IST" duration-ms="8633">
+    <groups>
+      <group name="Regression">
+        <method signature="LoginTest.loginTC01()[pri:0, instance:org.test.components.LoginTest@15bb5034]" name="loginTC01" class="org.test.components.LoginTest"/>
+        <method signature="LoginTest.signUpTc01()[pri:0, instance:org.test.components.LoginTest@15bb5034]" name="signUpTc01" class="org.test.components.LoginTest"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="LoginTest.loginTC01()[pri:0, instance:org.test.components.LoginTest@15bb5034]" name="loginTC01" class="org.test.components.LoginTest"/>
+        <method signature="LoginTest.signUpTc01()[pri:0, instance:org.test.components.LoginTest@15bb5034]" name="signUpTc01" class="org.test.components.LoginTest"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2024-10-28T19:08:08 IST" name="TestSmoke" finished-at="2024-10-28T19:08:17 IST" duration-ms="8633">
+      <class name="org.test.components.LoginTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:org.test.components.LoginTest@15bb5034]" started-at="2024-10-28T19:08:07 IST" name="beforeSuite" finished-at="2024-10-28T19:08:08 IST" duration-ms="1514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:org.test.components.LoginTest@15bb5034]" started-at="2024-10-28T19:08:08 IST" name="beforeTest" finished-at="2024-10-28T19:08:10 IST" duration-ms="2004" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="loginTC01()[pri:0, instance:org.test.components.LoginTest@15bb5034]" started-at="2024-10-28T19:08:10 IST" name="loginTC01" finished-at="2024-10-28T19:08:13 IST" duration-ms="3334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTC01 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:org.test.components.LoginTest@15bb5034]" started-at="2024-10-28T19:08:13 IST" name="afterMethod" finished-at="2024-10-28T19:08:14 IST" duration-ms="245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="signUpTc01()[pri:0, instance:org.test.components.LoginTest@15bb5034]" started-at="2024-10-28T19:08:14 IST" name="signUpTc01" finished-at="2024-10-28T19:08:17 IST" duration-ms="3000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpTc01 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:org.test.components.LoginTest@15bb5034]" started-at="2024-10-28T19:08:17 IST" name="afterMethod" finished-at="2024-10-28T19:08:17 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:org.test.components.LoginTest@15bb5034]" started-at="2024-10-28T19:08:17 IST" name="afterSuite" finished-at="2024-10-28T19:08:17 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- org.test.components.LoginTest -->
+    </test> <!-- TestSmoke -->
+  </suite> <!-- Suite -->
+</testng-results>
