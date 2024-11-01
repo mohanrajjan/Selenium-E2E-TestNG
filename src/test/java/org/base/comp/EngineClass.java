@@ -24,7 +24,7 @@ public class EngineClass extends BaseClass {
 	@BeforeTest(alwaysRun=true)
 	public void beforeTest() {
 		driver.manage().window().maximize();
-		driver.get("https://www.demoblaze.com/index.html");
+		driver.get(openURL("URL"));
 	}
 	
 	

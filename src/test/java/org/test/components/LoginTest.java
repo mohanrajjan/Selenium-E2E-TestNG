@@ -9,15 +9,22 @@ import com.aventstack.extentreports.Status;
 
 public class LoginTest extends EngineClass {
 
-	@Test(groups= {"Smoke","Regression"})
+	@Test(groups= {"Login","Smoke","Regression"})
 	public static void loginTC01() {
 		test = report.createTest("loginTc01");
 		LoginPage vLog = new LoginPage();
-		vLog.validLogin("Mohan0191","Mohan@123");
+		vLog.validLogin(readingExcel("sheet1", 0, 0),readingExcel("sheet1", 0, 1));
 		test.log(Status.PASS, "Login Successful");
 	}
 	
-	@Test(groups= {"Smoke", "Regression"})
+	@Test(groups="Login")
+	public static void loginTC02() {
+		test = report.createTest("loginTc01");
+		LoginPage vLog = new LoginPage();
+		vLog.invalidLogin("Mohan0191", "000");
+		test.log(Status.PASS, "Login Successful");
+	}
+	@Test(groups= { "Regression"})
 	public static void signUpTc01() {
 
 		test = report.createTest("SignUpTc01");

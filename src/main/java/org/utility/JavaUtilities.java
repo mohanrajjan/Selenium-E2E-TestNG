@@ -27,10 +27,10 @@ public class JavaUtilities {
 	public static String readingExcel(String sheet, int row, int col) {
 		String result=null;
 		try {
-			String filepath=System.getProperty("user.dir")+"/info.xlsx";
+			String filepath=System.getProperty("user.dir")+"//info.xlsx";
 			DataFormatter format= new DataFormatter();
 			FileInputStream instream = new FileInputStream(filepath);
-			XSSFWorkbook book= new XSSFWorkbook();
+			XSSFWorkbook book= new XSSFWorkbook(instream);
 			XSSFCell cell = book.getSheet(sheet).getRow(row).getCell(col);
 			result = format.formatCellValue(cell);
 			book.close();

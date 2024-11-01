@@ -52,4 +52,18 @@ public class LoginPage extends BaseClass{
 		}
 		buttonClick(logOut);
 	}
+	
+	public void invalidLogin(String userID1, String passwd1) {
+		waitImplicit(5);
+	
+	buttonClick(loginIcon);
+	waitExplicit(userName, 2);
+	textKey(userName, userID1);
+	textKey(passWord, passwd1);
+	waitExplicit(loginSubmit, 2);
+	buttonClick(loginSubmit);
+	String Expected="Welcome "+userID1;
+	String Actual=elementText(userText);
+	Assert.assertEquals(Expected,Actual);
+	}
 }

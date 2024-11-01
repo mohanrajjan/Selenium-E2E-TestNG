@@ -3,12 +3,12 @@
 <suite name="Suite">
 	<groups>
 		<run>
-			<include name="Regression"/>
+			<include name="Login" />
 		</run>
 	</groups>
-  <test thread-count="5" name="TestSmoke">
+  <test thread-count="5" name="LoginTest">
     <classes>
       <class name="org.test.components.LoginTest"/>
     </classes>
-  </test> <!-- TestSmoke -->
+  </test> <!-- LoginTest -->
 </suite> <!-- Suite -->
